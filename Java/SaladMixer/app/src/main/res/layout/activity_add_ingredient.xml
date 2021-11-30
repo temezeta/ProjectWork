@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/main_background"
+    tools:context=".addIngredient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/innerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:drawable/dialog_holo_light_frame"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/titleGrams3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editFatSaturated"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGrams4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editCarbohydrates"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGrams5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editCarboSugars"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGrams6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editFiber"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGrams7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editProtein"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGrams8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editSalt"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleGrams2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editFat"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleName"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_name"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorLink="#FF5722"
+            android:textSize="14sp"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editName"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/ingredient_name_input"
+            android:importantForAutofill="no"
+            android:inputType="textPersonName"
+            android:maxLength="30"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleWeight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_weight"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editWeight"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editWeight"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="54dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toStartOf="@+id/titleGrams"
+            app:layout_constraintHorizontal_bias="0.95"
+            app:layout_constraintStart_toEndOf="@+id/titleWeight"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+        <TextView
+            android:id="@+id/titleGrams"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/title_grams"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editWeight"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleKcal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/title_kcal"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editEnergy"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/titleEnergy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_energy"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editEnergy"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editEnergy"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editWeight"
+            app:layout_constraintTop_toBottomOf="@+id/editWeight" />
+
+        <EditText
+            android:id="@+id/editFat"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editEnergy"
+            app:layout_constraintTop_toBottomOf="@+id/editEnergy" />
+
+        <TextView
+            android:id="@+id/titleFat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_fat"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editFat"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editFatSaturated"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editFat"
+            app:layout_constraintTop_toBottomOf="@+id/editFat" />
+
+        <TextView
+            android:id="@+id/titleFatSaturated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/title_fat_saturated"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editFatSaturated"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editCarbohydrates"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editFatSaturated"
+            app:layout_constraintTop_toBottomOf="@+id/editFatSaturated" />
+
+        <EditText
+            android:id="@+id/editCarboSugars"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editCarbohydrates"
+            app:layout_constraintTop_toBottomOf="@+id/editCarbohydrates" />
+
+        <TextView
+            android:id="@+id/titleCarbohydrates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_carbohydrates"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editCarbohydrates"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/titleCarboSugars"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:text="@string/title_carbo_sugars"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editCarboSugars"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editFiber"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editCarboSugars"
+            app:layout_constraintTop_toBottomOf="@+id/editCarboSugars" />
+
+        <EditText
+            android:id="@+id/editSalt"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editProtein"
+            app:layout_constraintTop_toBottomOf="@+id/editProtein" />
+
+        <EditText
+            android:id="@+id/editProtein"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FF5722"
+            android:ems="10"
+            android:hint="@string/hint_0"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:textColor="#FF5722"
+            android:textColorHighlight="#FF5722"
+            android:textColorHint="#99000000"
+            android:textColorLink="#FF5722"
+            app:layout_constraintEnd_toEndOf="@+id/editFiber"
+            app:layout_constraintTop_toBottomOf="@+id/editFiber" />
+
+        <TextView
+            android:id="@+id/titleSalt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_salt"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editSalt"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/titleFiber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_fiber"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editFiber"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/titleProtein"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/title_protein"
+            android:textColor="#FF5722"
+            app:layout_constraintBaseline_toBaselineOf="@+id/editProtein"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/buttonAddIngredient"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#4CAF50"
+            android:onClick="onClickaddIngredient"
+            android:text="@string/button_add_new_ingredient"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#FF5722"
+            android:onClick="onClickGetDefaults"
+            android:text="@string/button_import_defaults"
+            android:textColor="#FFFFFF"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">#4CAF50</item>
+    </style>
+
+    <style name="alertDialog" parent="Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="colorPrimary">#4CAF50</item>
+        <item name="colorPrimaryDark">#4CAF50</item>
+        <item name="colorAccent">#4CAF50</item>
+    </style>
+
+    <style name="cardViewStyle" parent="CardView.Light">
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="cardCornerRadius">6dp</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_marginStart">4dp</item>
+        <item name="android:layout_marginEnd">4dp</item>
+    </style>
+
+    <style name="buttonRemove">
+        <item name="android:width">20dp</item>
+        <item name="android:backgroundTint">@color/colorAccent</item>
+    </style>
+</resources>
